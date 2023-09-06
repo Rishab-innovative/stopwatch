@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 169, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.container > p {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    word-spacing: 0.5rem;
+}
+
+#timer {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#lapbutton {
+    background-color: #ffa900;
+    border: 1px solid white;
+    display: none;
+}
+
+#lapList {
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+#lapList {
+    font-size: 2rem;
+}
+
+@media screen and (min-width:1800px) {
+
+    .container {
+        padding-top: 3rem;
+    }
+
+    .container > p {
+        font-size: 5.5rem;
+    }
+
+    #timer {
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        margin: 0.5rem 1rem;
+    }
+
+    #lapList {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .container > p {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .container > p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    #timer,
+    #lapList {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .container > p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        margin: 0 0.2rem;
+    }
+
+}
